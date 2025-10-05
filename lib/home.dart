@@ -10,25 +10,402 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.orange,
       ),
- /*     body: Text('this is home page',style: TextStyle(
+   //text customized
+   /*  body: Text('this is home page',style: TextStyle(
         fontSize: 50,
         color: Colors.red,
         fontWeight: FontWeight.w100,
       //  letterSpacing: 50,
         wordSpacing: 50,
       ),
-      ),   */
+      ),    */
 
-      body: Column(
+
+      ///text scrolling or colomn scrolling
+      body: SingleChildScrollView(
+        child:Column(
         mainAxisAlignment: MainAxisAlignment.start,    //spaceAround,start
 
         children: [
-          Text('this is home page'),
-        Text('this is home page'),
-    Text('this is home page'),
-    Text('this is home page'),
+
+          ///row
+          ///normal row
+
+        /*  Row(
+          // give spac between row,,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //normal row children
+
+          children: [
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+            Text(
+              'row',
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+              ),
+            ),
+          ],
+        ),
+          */
+          //row scrolimg
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+            // give spac between row,,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text(
+                'row',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.green,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              Text(
+                'row',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+            ],
+            ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+          Text('this is home page',style: TextStyle(
+            fontSize: 30,
+            color: Colors.red,
+            fontWeight: FontWeight.w100,
+            //  letterSpacing: 50,
+            wordSpacing: 20,
+          ),
+          ),
+
         ],
       )
+      ),
     );
   }
 }

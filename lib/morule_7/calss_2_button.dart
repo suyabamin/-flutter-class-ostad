@@ -50,16 +50,61 @@ class Buttongrp extends StatelessWidget {
             ),
 
             //outline button
-            SizedBox(height: 20,),
+            SizedBox(height: 20,),  //for spacing
             SizedBox(
               height: 50,
                 width: 300,
 
                 child: OutlinedButton(onPressed: (){},
                     child:Text('submit'))),
+
+            //text button
+            SizedBox(height: 20,),  //for spacing
+            TextButton(onPressed: (){
+              print('read more');
+            }, child: Text('read more')),
+           ///icon
+            Icon(Icons.phone_android,size: 50,color:Colors.blueAccent,),
+            //icon button
+            IconButton(onPressed: (){}, icon:Icon(Icons.delete,color:Colors.redAccent,size: 50,)),
+            SizedBox(height: 20,),
+
+      ///gester detector onpress
+           GestureDetector(
+              onTap:(){
+                print('single tap');
+              } ,
+                onDoubleTap: (){
+                print('double tap');
+                },
+                onLongPress: (){
+                print('long press');
+                },
+                child: Text('this is test text')),
+
+            //it is more usefull for onpress or tap
+            InkWell(
+                onTap:(){
+                  print('single tap');
+                } ,
+                onDoubleTap: (){
+                  print('double tap');
+                },
+                onLongPress: (){
+                  print('long press');
+                },
+                child: Text('Test-2')),
+
           ],
         ),
       ),
+      floatingActionButton:FloatingActionButton(
+          backgroundColor: Colors.red,
+          foregroundColor: Colors.black,
+          child: Icon(Icons.add),
+          onPressed: (){
+            print('adding floation action button');
+          }),
     );
   }
 }
